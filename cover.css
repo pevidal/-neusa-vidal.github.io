@@ -37,6 +37,9 @@ background-color: #fdd59c;
 .cover-container {
   max-width: 100em;
 }
+.border{
+  border-radius: 50%;
+}
 
 .fa {
   padding: 10px;
