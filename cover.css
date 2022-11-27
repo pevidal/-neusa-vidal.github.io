@@ -1,0 +1,94 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+@font-face {
+  font-family: Alfrah;
+  src: url(font/afrah-regular.ttf)
+}
+@font-face {
+  font-family: Glacial;
+  src: url(font/glacial-indifference.ttf)
+}
+
+/*
+ * Base structure
+ */
+
+body {
+background-color: #fdd59c;
+  
+}
+.sobre{
+  background-color: #EC9F34;
+  color: white;
+  font-family: Glacial;
+  border-radius: 6px;
+}
+
+.cover-container {
+  max-width: 100em;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+/*
+ * Header
+ */
+.cor-fonte{
+  color: #757577;
+  font-family: Alfrah;
+}
+
+.subcor-fonte{
+  color: #A3A3A4;
+  font-family: Glacial;
+}
+
+.cabecalho{
+  font-family: Glacial;
+  font-size: x-large;
+  border-radius: 6px;
+}
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
