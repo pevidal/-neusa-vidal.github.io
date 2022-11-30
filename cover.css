@@ -73,8 +73,9 @@ background-color: #fdd59c;
 
 .cabecalho{
   font-family: Glacial;
-  font-size: x-large;
+  font-size: large;
   border-radius: 6px;
+  color:white;
 }
 
 .nav-masthead .nav-link {
