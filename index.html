@@ -1,12 +1,19 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Neusa Vidal Consultoria</title>
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+    
+    
+
+    
 
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -16,7 +23,14 @@
         -moz-user-select: none;
         user-select: none;
       }
-
+      @font-face {
+      font-family: Alfrah;
+      src: url(/Users/pedro/Documents/sites/carousel/font/afrah-regular.ttf)
+      }   
+      @font-face {
+        font-family: Glacial;
+        src: url(/Users/pedro/Documents/sites/carousel/font/glacial-indifference.ttf)
+      }
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -28,6 +42,7 @@
         background-color: rgba(0, 0, 0, .1);
         border: solid rgba(0, 0, 0, .15);
         border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
       }
 
       .b-example-vr {
@@ -62,65 +77,125 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link href="carousel.css" rel="stylesheet">
   </head>
-<body class="d-flex h-100 text-center text-bg-light" style="background-color: rgb(252, 240, 224);">
-
-
-
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-  <header class="mb-auto">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <body style="background-color: #dbdbdb ;">
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #BED995; border-radius: 0px 0px 6px 6px; font-family: Galacial;">
+    <div class="container-fluid" >
+      <a class="navbar-brand meu-link"  href="#"> <img src="/Users/pedro/Documents/sites/carousel/img/logo-sem-fundo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top "> Neusa Vidal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse" >
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link  meu-link"  href="#">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link  meu-link"  href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  meu-link" href="#">Contato</a>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
-
-  <main class="px-3">
-    <div class="apresentacao">
-      <div>
-        <img src="img/logo-sem-fundo.png" alt=""  height="300" width="300">
-        <h1 class="cor-fonte" style="font-size:4vw"><u>Neusa Vidal</u></h1>
-        <h3 class="subcor-fonte"style="font-size:2vw">Consultoria em qualidade e segurança dos alimentos</h3>
-      </div>
-      <div class="sobre" >
-        
-        
-        <h2>Um pouco sobre:</h2>
-        <br>
-        <img src="img/fotoNeusa.jpeg" style="border-radius: 50%;" alt=""  height="150" width="150">
-        <br>
-        <br>
-        <h3>Especialista em Vigilância Sanitária e Qualidade de Alimentos.
-        <h4>Bióloga, Pós Graduada em Vigilância Sanitária e Qualidade de Alimentos.
-        Possui mais de 16 anos de experiência na área de Controle de Qualidade e Segurança dos Alimentos, atuando em empresas de grande e médio porte.
-        Sólido conhecimento em programas e ferramentas de Qualidade, processos operacionais, Auditoria Interna de Qualidade e Gestão Ambiental.</h4>
-        <br>
-      </div>
     </div>
-  </main>
+  </nav>
+</header>
 
-  <footer class="mt-auto text-black-50">
-    <div>
-      
-    </div>
+<main>
     
-    </footer>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing" >
+
+    <!-- Three columns of text below the carousel -->
+    <div class="lead">
+      <div class="col-lg-12">
+        <img src="/Users/pedro/Documents/sites/carousel/img/logo-sem-fundo.png" class="rounded mx-auto d-block" style="max-width: 15%; margin-top: 5%;"  alt="Logo">
+      
+        <h1 class="featurette-heading fw-normal lh-1 " style=" margin-top: 1.5rem;font-family: Glacial; text-align: center; color: #757577;">Neusa Vidal</h1>
+        <p class="lead" style="font-family: Glacial; text-align: center; color: #757577;">Consultoria em qualidade e segurança dos alimentos</p>
+        
+      </div><!-- /.col-lg-12 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h1 style="font-family: Glacial; " class="featurette-heading fw-normal lh-1"><span class="text-success">Especialista</span> em Vigilância Sanitária e  <span class="text-success">Qualidade </span>de Alimentos.</h1>
+        <br>
+        <p class="lead">Bióloga, Pós Graduada em Vigilância Sanitária e Qualidade de Alimentos.
+          Possui mais de 16 anos de experiência na área de Controle de Qualidade e Segurança dos Alimentos, atuando em empresas de grande e médio porte.
+          Sólido conhecimento em programas e ferramentas de Qualidade, processos operacionais, Auditoria Interna de Qualidade e Gestão Ambiental.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="/Users/pedro/Documents/sites/carousel/img/fotoNeusa.jpeg" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 5%; border-radius: 50%;"  alt="Foto">
+        
+
+      </div>
     </div>
+
+    <hr class="featurette-divider">
+    <h2 class="featurette-heading " style="margin-top: -5%">Serviços: </h2>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-1">
+        
+
+        <ul class="list-group-flush minha-lista" >
+          <li class="list-group-item lead">Consultoria</li>
+          <li class="list-group-item lead">Consultoria</li>
+          <li class="list-group-item lead">Consultoria</li>
+          <li class="list-group-item lead">Consultoria</li>
+          <li class="list-group-item lead">Consultoria</li>
+        </ul>
+        
+      </div>
+ 
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+
+      <h2 class="featurette-heading " style="margin-top: -5%">Contato: </h2>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@examplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
