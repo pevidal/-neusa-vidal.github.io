@@ -13,11 +13,11 @@ body {
 
 @font-face {
 font-family: Alfrah;
-src: url(/Users/pedro/Documents/sites/carousel/font/afrah-regular.ttf)
+src: url(font/afrah-regular.ttf)
 }   
 @font-face {
   font-family: Glacial;
-  src: url(/Users/pedro/Documents/sites/carousel/font/glacial-indifference.ttf)
+  src: url(font/glacial-indifference.ttf)
 }
 
 
