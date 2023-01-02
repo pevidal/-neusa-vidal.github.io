@@ -11,6 +11,10 @@ body {
   
 }
 
+.lista {
+  background-color: inherit;
+}
+
 @font-face {
 font-family: Alfrah;
 src: url(font/afrah-regular.ttf)
